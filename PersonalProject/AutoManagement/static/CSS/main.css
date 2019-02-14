@@ -1,0 +1,11 @@
+.LoginPage{
+    background-color: #363984;
+    align-items: center;
+}
+
+.LoginPage_main{
+    width: 392px;
+    height: 412px;
+    border: 1px solid black;
+    margin: 50px auto 0;
+}
