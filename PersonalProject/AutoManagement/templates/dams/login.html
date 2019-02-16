@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>login</title>
-    <link rel="stylesheet" type="text/css" href="/static/CSS/main.css">
+	<title>Log in | DAMS</title>
+    <link rel="stylesheet" type="text/css" href="/static/CSS/login.css">
+    <script type="text/javascript" src="/static/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="/static/js/login.js"></script>
 </head>
-<body>
-    <div class="LoginPage">
-        <div class="LoginPage_main">
-            <div class="LoginPage_logo"><h3>AutoManagement</h3></div>
-            <div class="LoginPage_form">
-                <div>
-                    <input type="text" name="username" placeholder="请输入用户名">
+<body class="Login">
+    <div class="LoginPage_con">
+        <div class="LoginPage_logo">
+                <h1>AutoManagement</h1>
+        </div>
+
+        <div class="LoginPage_form">
+            <form action="/logincheck" method="post">
+                {% csrf_token %}
+                <div class="form-row">
+                    <input type="text" name="username" placeholder="请输入用户名" id="id_username">
                 </div>
-                <div>
-                    <input type="password" name="password" placeholder="请输入密码">
+                <div class="form-row">
+                    <input type="password" name="password" placeholder="请输入密码" id="id_password">
                 </div>
-                <div>
-                    <button type="submit">登录</button>
+                <div class="submit-row">
+                    <input type="submit" value="Log in" id="btn">
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
