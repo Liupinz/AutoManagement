@@ -1,0 +1,26 @@
+---
+
+- name: install mysql-community-release package
+  command: rpm -Uvh http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm
+
+- name: install
+  yum: name=mysql-community-server state=installed 
+
+- name: start service
+  service: name=mysqld state=started enabled=yes
+
+- name: install expect
+  yum: name=expect state=installed
+
+- name: copy mysql_secure_installation file
+  copy: src=files/mysql_secure_installation.exp dest=/root/
+
+- name: chmod
+  file: path=/root/mysql_secure_installation.exp mode=777
+
+- name: expect the mysql_secure_installation.exp
+  command: ./mysql_secure_installation.exp
+
+- name: del mysql_secure_installation.exp
+  file: path=/root/mysql_secure_installation.exp state=absent
+

@@ -5,4 +5,6 @@ urlpatterns = [
     url(r'^login$', views.login),
     url(r'^dashboard$', views.dashboard),
     url(r'^logincheck$', views.logincheck),
+    url(r'^mysql', views.mysql),
+    url(r'^singlemysql', views.singlemysql),
 ]
