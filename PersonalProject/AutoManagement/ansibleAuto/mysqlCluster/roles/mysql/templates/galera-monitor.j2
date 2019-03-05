@@ -1,0 +1,23 @@
+# default:on
+# description: galera-monitor
+service galera-monitor
+{
+  port = 9200
+  disable = no
+  socket_type = stream
+  protocol = tcp
+  wait = no
+  user = root
+  group = root
+  groups = yes
+  server = /usr/bin/clustercheck
+  type = UNLISTED
+  per_source = UNLIMITED
+  log_on_success =
+  log_on_failure = HOST
+  flags = REUSE
+  cps = 60 60
+  instances = UNLIMITED
+
+}
+

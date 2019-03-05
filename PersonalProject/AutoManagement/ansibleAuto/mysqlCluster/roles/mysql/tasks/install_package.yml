@@ -1,0 +1,25 @@
+---
+- name: Install mariadb packages
+  yum: name={{ item }} state=present
+  with_items:
+    - mariadb
+    - mariadb-server
+    - MySQL-python
+    - python2-PyMySQL
+  register: pkg_inst_result
+  until: pkg_inst_result|success
+  retries: 3
+  delay: 5
+
+- name: Install Galera packages
+  yum: name={{ item }} state=present
+  with_items:
+    - mariadb-server-galera
+    - xinetd
+    - rsync
+  register: pkg_inst_result
+  until: pkg_inst_result|success
+  retries: 3
+  delay: 5
+
+

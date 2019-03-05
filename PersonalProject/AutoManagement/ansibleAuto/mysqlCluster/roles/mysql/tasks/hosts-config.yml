@@ -1,0 +1,11 @@
+- name: set hostname
+  hostname: name={{ inventory_hostname }}
+
+- name: add hosts file line
+  lineinfile:
+    dest: /etc/hosts
+    regexp: '^{{ item.value.ansible_host }}'
+    line: |
+      {{ item.value.ansible_host }}       {{item.key}}
+  with_dict: "{{ hostvars }}"
+

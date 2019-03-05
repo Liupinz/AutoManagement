@@ -1,0 +1,13 @@
+---
+
+- name: host configure
+  include: hosts-config.yml
+
+- name: install package
+  include: install_package.yml
+
+- name: install mariadb
+  include: install_mariadb.yml
+
+- name: install galera
+  include: install_galera.yml

@@ -1,0 +1,78 @@
+#
+# These groups are read by MariaDB server.
+# Use it for options that only the server (but not clients) should see
+#
+# See the examples of server my.cnf files in /usr/share/mysql/
+#
+
+# this is read by the standalone daemon and embedded servers
+[server]
+
+# this is only for the mysqld standalone daemon
+# Settings user and group are ignored when systemd is used.
+# If you need to run mysqld under a different user or group,
+# customize your systemd unit file for mysqld/mariadb according to the
+# instructions in http://fedoraproject.org/wiki/Systemd
+[mysqld]
+bind-address="{{ hostvars[ansible_hostname].ansible_host }}"
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+log-error=/var/log/mariadb/mariadb.log
+pid-file=/var/run/mariadb/mariadb.pid
+
+#
+# * Galera-related settings
+#
+[galera]
+# Mandatory settings
+wsrep_on=ON
+wsrep_provider=/usr/lib64/galera/libgalera_smm.so
+wsrep_cluster_name="mariadb_galera_cluster"
+wsrep_provider_options="pc.recovery=TRUE;gcache.size=300M;pc.wait_prim=no"
+wsrep_cluster_address="gcomm://
+{% for item in groups.Mysql %}
+{{ hostvars[item].ansible_host }}{% if not loop.last %},{% endif %}{% if loop.last %}"{% endif %}
+{% endfor %}
+
+wsrep_node_name="{{ ansible_hostname }}"
+wsrep_node_address="{{ hostvars[ansible_hostname].ansible_host }}"
+
+
+wsrep_slave_threads=1
+wsrep_certify_nonPK=1
+wsrep_max_ws_rows=131072
+wsrep_max_ws_size=1073741824
+wsrep_debug=0
+wsrep_convert_LOCK_to_trx=0
+wsrep_retry_autocommit=1
+wsrep_auto_increment_control=1
+wsrep_drupal_282555_workaround=0
+wsrep_causal_reads=0
+wsrep_notify_cmd=
+wsrep_sst_method=rsync
+
+binlog_format=row
+default_storage_engine=InnoDB
+innodb_autoinc_lock_mode=2
+innodb_locks_unsafe_for_binlog=1
+#
+# Allow server to accept connections on all interfaces.
+#
+# Optional setting
+#wsrep_slave_threads=1
+innodb_flush_log_at_trx_commit=0
+
+# this is only for embedded server
+[embedded]
+
+# This group is only read by MariaDB servers, not by MySQL.
+# If you use the same .cnf file for MySQL and MariaDB,
+# you can put MariaDB-only options here
+[mariadb]
+
+# This group is only read by MariaDB-10.1 servers.
+# If you use the same .cnf file for MariaDB of different versions,
+# use this group for options that older servers don't understand
+[mariadb-10.1]
+
+

@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - name: test
+      debug: msg={{ hostvars[ansible_hostname].ansible_host }}

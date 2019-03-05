@@ -1,0 +1,8 @@
+node01 ansible_connection=ssh ansible_host=172.16.222.46
+node02 ansible_connection=ssh ansible_host=172.16.222.47
+node03 ansible_connection=ssh ansible_host=172.16.222.48
+
+
+[all:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=Huayun@123

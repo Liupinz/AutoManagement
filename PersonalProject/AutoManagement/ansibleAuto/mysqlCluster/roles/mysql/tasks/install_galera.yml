@@ -1,0 +1,79 @@
+- name: Stop mariadb services
+  service: name=mariadb state=stopped
+
+- name: Do not use galera.cnf
+  file: path=/etc/my.cnf.d/galera.cnf state=absent
+
+- name: Create one template mariadb-server.cnf
+  template: src=templates/mariadb-server.cnf.j2 dest=/etc/my.cnf.d/mariadb-server.cnf
+
+- name: choice one node to build cluster
+  command: /usr/bin/galera_new_cluster
+  register: galeraclusterstatus
+  until: galeraclusterstatus | success
+  retries: 10
+  delay: 3
+
+  when: ansible_hostname == groups.Mysql[0]
+
+- name: Restart node Galera cluster service
+  service: name=mariadb state=restarted enabled=yes
+  register: service_status
+  until: service_status|success
+  retries: 3
+  delay: 5
+  when: ansible_hostname != groups.Mysql[0]
+
+- name: Restart node Galera cluster service
+  service: name=mariadb state=restarted enabled=yes
+  register: service_status
+  until: service_status|success
+  retries: 3
+  delay: 5
+  when: ansible_hostname == groups.Mysql[0]
+
+- name: Create /etc/sysconfig/clustercheck
+  template: src=templates/clustercheck.j2 dest=/etc/sysconfig/clustercheck
+
+- name: Create /etc/xinetd.d/galera-monitor
+  template: src=templates/galera-monitor.j2 dest=/etc/xinetd.d/galera-monitor
+
+- name: Modify /etc/services to comment old service with port 9200
+  replace: dest=/etc/services regexp={{ item.regexp }} replace={{ item.line }}
+  with_items:
+    - { regexp: '^wap-wsp[^-]', line: '#wap-wsp' }
+
+- name: Modify /etc/services to add galera-monitor with service port 9200
+  blockinfile:
+    dest: /etc/services
+    insertbefore: "^#wap-wsp.*9200/tcp"
+    block: "galera-monitor  9200/tcp              # Galera Clustercheck"
+
+- name: Create database user for clustercheck
+  mysql_user:
+    login_user: root
+    login_password: "{{ DB_ROOT_PASSWORD }}"
+    name: "{{ GALERA_MONITOR_USER }}"
+    password: "{{ GALERA_MONITOR_USER_PASSWORD }}"
+    host: "{{ item }}"
+    state: "present"
+    priv: "*.*:USAGE"
+  with_items:
+    - "localhost"
+  register: galera_users
+  until: galera_users | success
+  retries: 10
+  delay: 3
+
+- name: Start xinetd services
+  service: name=xinetd enabled=yes state=restarted
+  retries: 3
+  delay: 5
+
+- name: Verify galera cluster check status
+  command: /usr/bin/clustercheck
+  register: galerastatus
+  until: galerastatus | success
+  retries: 10
+  delay: 3
+
