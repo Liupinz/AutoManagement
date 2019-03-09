@@ -24,10 +24,11 @@ def logincheck(request):
 def dashboard(request):
     return render(request, 'dams/dashboard.html')
 
+def mchoice(request):
+    return render(request, 'dams/mchoice.html')
 
 def mysql(request):
     return render(request, 'dams/mysql.html')
-
 
 def singlemysql(request):
     ip = request.POST.get('hostip')

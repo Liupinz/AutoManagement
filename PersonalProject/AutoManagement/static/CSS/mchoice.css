@@ -1,0 +1,58 @@
+.dashboard{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.header{
+    width: auto;
+    height: 40px;
+    padding: 10px 40px;
+    background: #417690;
+    line-height: 40px;
+    color: cornsilk;
+
+}
+
+.header h1{
+    font-size: 25px;
+    color: #f8f8f8;
+    margin: 0;
+    font-weight: normal; /*不加粗*/
+    text-align: center; /*水平居中*/
+    line-height: 40px;  /*垂直居中*/
+    float: left;
+}
+
+.content{
+    width: 1200px;
+    border: 1px solid #fff;
+    margin: 30px auto 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content  div{
+    width: 300px;
+    height: 200px;
+    background: #417690;
+    margin: 50px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 4px;
+}
+
+.div1{
+    float: left;
+}
+
+.div3{
+    float: right;
+}
+
+.content  div a{
+    text-decoration: none; /*去掉a标签下划线*/
+    color: #ffffff;
+    display: block; /*响应区域为整个块*/
+    font-size: 20px;
+}
