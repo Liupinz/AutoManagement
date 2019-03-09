@@ -2,7 +2,7 @@
 
 ------
 
-> 简介: AutoManagement平台是一个基于django框架实现的AMS(Auto Management System)系统.底层通过ansible api来执行ansible-playbook实现环境的快速搭建.
+> 简介: AutoManagement平台是一个基于django框架实现的AMS(Auto Management System)系统.底层通过ansible api来执行ansible-playbook实现环境的快速搭建.暂时支持MySQL单节点及MariaDB Galera Cluster构建,后续会继续更新支持redis及其集群、openstack、docker、mongodb等等一系列环境的快速构建  
 
 ## 基础环境
 ```
