@@ -27,20 +27,23 @@ def dashboard(request):
 def mchoice(request):
     return render(request, 'dams/mchoice.html')
 
-def mysql(request):
-    return render(request, 'dams/mysql.html')
+def mysqlsingle(request):
+    return render(request, 'dams/mysqlsingle.html')
 
-def singlemysql(request):
+def singleinstall(request):
     ip = request.POST.get('hostip')
     password = request.POST.get('mpassword')
     inventory_path = os.path.join(BASE_DIR, 'ansibleAuto/mysql/inventory/hosts')
     info_dict = ip + " " + "ansible_connection=ssh" + " " + "ansible_user=root" + " " + "ansible_host="+ ip + " " + "ansible_ssh_pass=" + password
     with open(inventory_path, 'w') as f:
         f.write(info_dict)
-
     return HttpResponse("ok")
 
+def galeracluster(request):
+    return render(request, 'dams/galeracluster.html')
 
+def galerainstall(request):
+    pass
 
 
 

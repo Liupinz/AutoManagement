@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MySQL | Configuration</title>
+    <link rel="stylesheet" type="text/css" href="/static/CSS/galeracluster.css">
+</head>
+<body class="mdashboard">
+    <div class="mcontainer">
+        <div class="mheader">
+            <h1>MySQL Auto Configuration</h1>
+        </div>
+
+        <div class="mcontent">
+            <div class="h">
+                <h3>配置</h3>
+            </div>
+            <div class="configure">
+                <form action="/singlemysql" method="post">
+                    {% csrf_token %}
+                    <div class="mform-row">
+                        <label class="required" for="id_hostip">节点1地址</label>
+                        <input type="text" name="hostip1" id="id_hostip">
+                    </div>
+                    <div class="mform-row">
+                        <label class="required" for="id_hostip">节点2地址</label>
+                        <input type="text" name="hostip2" id="id_hostip">
+                    </div>
+                    <div class="mform-row">
+                        <label class="required" for="id_hostip">节点3地址</label>
+                        <input type="text" name="hostip3" id="id_hostip">
+                    </div>
+                    <div class="mform-row">
+                        <label class="required" for="id_mpassword">用户密码</label>
+                        <input type="password" name="mpassword" id="id_mpassword">
+                    </div>
+                    <div class="msubmit">
+                        <input type="submit" value="下一步">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

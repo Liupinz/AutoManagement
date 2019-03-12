@@ -61,9 +61,15 @@
     border: 1px solid #ccc;
 }
 
+.validation-error{
+    color: #eb5f5c;
+    font-size: 12px;
+    display: block;
+}
+
 .msubmit{
     float: right;
-    margin-top: 170px;
+    margin-top: 180px;
 }
 
 .msubmit input{

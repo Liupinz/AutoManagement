@@ -13,7 +13,6 @@
   until: galeraclusterstatus | success
   retries: 10
   delay: 3
-
   when: ansible_hostname == groups.Mysql[0]
 
 - name: Restart node Galera cluster service

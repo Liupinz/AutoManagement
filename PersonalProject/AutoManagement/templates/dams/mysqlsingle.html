@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>MySQL | Configuration</title>
-    <link rel="stylesheet" type="text/css" href="/static/CSS/mysql.css">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/mysqlsingle.css">
+    <script type="text/javascript" src="/static/js/mysqlsingle.js"></script>
 </head>
 <body class="mdashboard">
     <div class="mcontainer">
@@ -16,11 +17,12 @@
                 <h3>配置</h3>
             </div>
             <div class="configure">
-                <form action="/singlemysql" method="post">
+                <form action="/singleinstall" method="post">
                     {% csrf_token %}
                     <div class="mform-row">
                         <label class="required" for="id_hostip">节点地址</label>
                         <input type="text" name="hostip" id="id_hostip">
+                        <span class="validation-error" id="validation"></span>
                     </div>
                     <div class="mform-row">
                         <label class="required" for="id_mpassword">用户密码</label>

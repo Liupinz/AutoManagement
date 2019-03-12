@@ -1,1 +1,1 @@
-admin ansible_connection=ssh ansible_user=root ansible_host=admin ansible_ssh_pass=admin
+ ansible_connection=ssh ansible_user=root ansible_host= ansible_ssh_pass=

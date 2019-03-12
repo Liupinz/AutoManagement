@@ -1,0 +1,74 @@
+.mdashboard{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.mheader{
+    width: auto;
+    height: 40px;
+    padding: 10px 40px;
+    background: #417690;
+    line-height: 40px;
+    color: cornsilk;
+
+}
+
+.mheader h1{
+    font-size: 25px;
+    color: #f8f8f8;
+    margin: 0;
+    font-weight: normal; /*不加粗*/
+    text-align: center; /*水平居中*/
+    line-height: 40px;  /*垂直居中*/
+    float: left;
+}
+.h {
+    color: #cccccc;
+    font-size: 13px;
+    font-family: 'Microsoft Yahei';
+    border-bottom: 1px solid #eee
+}
+
+.mcontent{
+    width: 1000px;
+    height: 500px;
+    /*border: 1px solid #417690;*/
+    margin: 50px auto 0;
+    color: #cccccc;
+}
+
+.configure{
+    width: 800px;
+    height: 300px;
+    border-bottom:1px solid #eee;
+    margin: 80px auto 0;
+}
+
+.configure label{
+    display: block;
+    width: 100px;
+}
+
+.mform-row{
+    margin: 20px auto 0;
+}
+
+.mform-row #id_hostip, .mform-row #id_mpassword{
+    /*width: 100%;*/
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.msubmit{
+    float: right;
+    margin-top: 35px;
+}
+
+.msubmit input{
+    border: none;
+    background: #eee;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
