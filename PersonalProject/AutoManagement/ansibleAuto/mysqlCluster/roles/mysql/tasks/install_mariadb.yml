@@ -1,30 +1,19 @@
----
-- name: configure
-  templates: src=templates/my.cnf.j2 dest=/etc/my.cnf
-
-- name: mkdir
-  file: path=/etc/systemd/system/mariadb.service.d state=directory
-
-- name: config /etc/systemd/system/mariadb.service.d/limits.conf for limit
-  template: src=templates/limits.conf.j2 dest=/etc/systemd/system/mariadb.service.d/limits.conf
-
-- name: daemon-reload
-  shell: systemctl daemon-reload
-
 - name: start mariadb services
   service: name=mariadb state=started enabled=yes
+  when: ansible_hostname == groups.Mysql[0] 
 
-- name: change database root password
-  command: mysqladmin -u root password "{{ DB_ROOT_PASSWORD }}"
- 
-- name: database security enhancement for ha system
-  command: mysql -u root -p{{ DB_ROOT_PASSWORD }} -e "{{ item }}"
-  with_items:
-    - "DELETE FROM mysql.user WHERE User='';"
-    - "DELETE FROM mysql.db WHERE Db='test' OR Db='test\_%';"
-    - "GRANT ALL PRIVILEGES ON *.* to 'root'@'%' IDENTIFIED BY '{{ DB_ROOT_PASSWORD }}' WITH GRANT OPTION"
-    - "GRANT ALL PRIVILEGES ON *.* to 'root'@'{{ ansible_hostname }}' IDENTIFIED BY '{{ DB_ROOT_PASSWORD }}' WITH GRANT OPTION"
-    - "FLUSH PRIVILEGES;"
+- name: mysql secure installation
+  copy: src=files/mysql_secure_installation.exp dest=/root/
+  when: ansible_hostname == groups.Mysql[0]
 
+- name: chmod
+  file: path=/root/mysql_secure_installation.exp mode=777
+  when: ansible_hostname == groups.Mysql[0]
 
+- name: expect the mysql_secure_installation.exp
+  command: ./mysql_secure_installation.exp
+  when: ansible_hostname == groups.Mysql[0]
 
+- name: stop mariadb services
+  service: name=mariadb state=stopped
+  when: ansible_hostname == groups.Mysql[0]

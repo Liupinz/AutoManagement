@@ -1,7 +1,9 @@
-- name: install mysql
-  gather_facts: no
-  hosts: all
+- hosts: Mysql
+  any_errors_fatal: true
   vars_files:
-      - ./group_vars/all.yml
+    - ./group_vars/all.yml
+- hosts: Mysql
+  any_errors_fatal: true
   roles:
-      - mysql
+    - common
+    - mysql 

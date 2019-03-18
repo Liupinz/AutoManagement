@@ -20,4 +20,4 @@ window.onload = function(){
         }
    }
    setInterval(checkIP, 1000);
-}
+};

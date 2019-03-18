@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/AutoManagement/templates/dams/mysql.html" line="29" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="8723a2dc-caa1-4d11-b170-246f3e2d24ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AutoManagement/dams/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AutoManagement/dams/utils/ansible_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AutoManagement/static/CSS/mysql.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AutoManagement/templates/dams/mysql.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PersonalProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PersonalProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutoManagement/static/js/DB/galeracluster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutoManagement/templates/dams/DB/galerainstall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutoManagement/templates/dams/DB/mysqlsingleinstall.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoManagement/AutoManagement/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/AutoManagement/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoManagement/dams/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/dams/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/ansibleAuto/mysql/inventory/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/ansibleAuto/mysql/inventory/hosts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/ansibleAuto/mysqlCluster/roles/mysql/tasks/install_mariadb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/ansibleAuto/mysqlCluster/roles/mysql/tasks/install_mariadb.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AutoManagement/dams/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/dams/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoManagement/templates/dams/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/templates/dams/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/static/CSS/galeracluster.css" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/static/CSS/DB/galeracluster.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/static/CSS/galerainstall.css" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/static/CSS/DB/galerainstall.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/static/CSS/mchoice.css" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/static/CSS/DB/mchoice.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/static/CSS/mysqlsingle.css" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/static/CSS/DB/mysqlsingle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/static/js/mysqlsingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/static/js/DB/mysqlsingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/templates/dams/galeracluster.html" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/templates/dams/DB/galeracluster.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/templates/dams/galerainstall.html" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/static/CSS/DB/mysqlsingleinstall.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/templates/dams/mchoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/templates/dams/DB/mchoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoManagement/templates/dams/mysqlsingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/AutoManagement/templates/dams/DB/mysqlsingle.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,22 +31,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AutoManagement/dams/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AutoManagement/dams/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+            <state relative-caret-position="445">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -54,68 +43,74 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AutoManagement/ansibleAuto/mysql/inventory/hosts">
+        <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/DB/mysqlsingleinstall.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="107" selection-start-column="107" selection-end-column="107" />
+            <state relative-caret-position="308">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AutoManagement/dams/utils/ansible_api.py">
+        <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/DB/mysqlsingleinstall.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-              <folding>
-                <element signature="e#16#75#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="489">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AutoManagement/AutoManagement/settings.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/mysql.html">
+        <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/dashboard.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/DB/galerainstall.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="374">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/mysql.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1166">
-              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AutoManagement/dams/utils/__init__.py">
+        <entry file="file://$PROJECT_DIR$/AutoManagement/AutoManagement/urls.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="24" />
+            <state relative-caret-position="814">
+              <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/DB/mchoice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -126,6 +121,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -139,19 +137,32 @@
         <option value="$PROJECT_DIR$/AutoManagement/dams/utils/__init__.py" />
         <option value="$PROJECT_DIR$/AutoManagement/AutoManagement/__init__.py" />
         <option value="$PROJECT_DIR$/AutoManagement/templates/dams/dashboard.html" />
-        <option value="$PROJECT_DIR$/AutoManagement/dams/urls.py" />
-        <option value="$PROJECT_DIR$/AutoManagement/dams/views.py" />
         <option value="$PROJECT_DIR$/AutoManagement/templates/dams/mysql.html" />
         <option value="$PROJECT_DIR$/AutoManagement/ansibleAuto/mysql/inventory/hosts" />
         <option value="$PROJECT_DIR$/AutoManagement/dams/utils/ansible_api.py" />
+        <option value="$PROJECT_DIR$/AutoManagement/static/js/mysqlsingle.js" />
+        <option value="$PROJECT_DIR$/AutoManagement/templates/dams/galeracluster.html" />
+        <option value="$PROJECT_DIR$/AutoManagement/static/js/galeracluster.js" />
+        <option value="$PROJECT_DIR$/AutoManagement/static/CSS/galeracluster.css" />
+        <option value="$PROJECT_DIR$/AutoManagement/static/CSS/mysqlsingle.css" />
+        <option value="$PROJECT_DIR$/AutoManagement/templates/dams/mysqlsingleinstall.html" />
+        <option value="$PROJECT_DIR$/AutoManagement/static/CSS/mysqlsingleinstall.html" />
+        <option value="$PROJECT_DIR$/AutoManagement/static/CSS/mysqlsingleinstall.css" />
+        <option value="$PROJECT_DIR$/AutoManagement/templates/dams/DB/galeracluster.html" />
+        <option value="$PROJECT_DIR$/AutoManagement/templates/dams/DB/mchoice.html" />
+        <option value="$PROJECT_DIR$/AutoManagement/templates/dams/DB/mysqlsingle.html" />
+        <option value="$PROJECT_DIR$/AutoManagement/dams/urls.py" />
+        <option value="$PROJECT_DIR$/AutoManagement/dams/views.py" />
+        <option value="$PROJECT_DIR$/AutoManagement/templates/dams/DB/mysqlsingleinstall.html" />
+        <option value="$PROJECT_DIR$/AutoManagement/static/CSS/DB/mysqlsingleinstall.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="480" />
-    <option name="y" value="35" />
-    <option name="width" value="1996" />
-    <option name="height" value="1301" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="760" />
+    <option name="y" value="24" />
+    <option name="width" value="1789" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,7 +240,23 @@
               <item name="PersonalProject" type="462c0819:PsiDirectoryNode" />
               <item name="AutoManagement" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="DB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PersonalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PersonalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="AutoManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PersonalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PersonalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="AutoManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="DB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PersonalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -244,6 +271,14 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="dams" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PersonalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PersonalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="AutoManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="dams" type="462c0819:PsiDirectoryNode" />
+              <item name="DB" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -252,11 +287,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AutoManagement/templates/dams/DB" />
+      <recent name="$PROJECT_DIR$/AutoManagement/static/js/DB" />
+      <recent name="$PROJECT_DIR$/AutoManagement/static/CSS/DB" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -313,12 +357,13 @@
       <workItem from="1550986686221" duration="9466000" />
       <workItem from="1551358371934" duration="9280000" />
       <workItem from="1551616960663" duration="4413000" />
-      <workItem from="1551700421995" duration="607000" />
+      <workItem from="1551700421995" duration="1230000" />
+      <workItem from="1552823728441" duration="9477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23808000" />
+    <option name="totallyTimeSpent" value="33908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,14 +375,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="480" y="35" width="1996" height="1301" extended-state="6" />
-    <editor active="true" />
+    <frame x="760" y="24" width="1789" height="1416" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20871794" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23637407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32971296" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24787053" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -367,37 +411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutoManagement/dams/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutoManagement/dams/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AutoManagement/ansibleAuto/mysql/inventory/hosts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="107" selection-start-column="107" selection-end-column="107" />
+          <caret column="73" selection-start-column="73" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -411,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/mysql.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1166">
@@ -428,20 +438,140 @@
     <entry file="file://$PROJECT_DIR$/AutoManagement/dams/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AutoManagement/dams/utils/ansible_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="814">
+          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
           <folding>
             <element signature="e#16#75#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/DB/galerainstall.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/js/DB/mysqlsingle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/js/DB/galeracluster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/DB/galeracluster.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/mysqlsingleinstall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/DB/mysqlsingle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/DB/galeracluster.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/DB/mysqlsingle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/dams/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/dams/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/AutoManagement/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/DB/mchoice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/DB/galerainstall.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/templates/dams/DB/mysqlsingleinstall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoManagement/static/CSS/DB/mysqlsingleinstall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -25,10 +25,10 @@ def dashboard(request):
     return render(request, 'dams/dashboard.html')
 
 def mchoice(request):
-    return render(request, 'dams/mchoice.html')
+    return render(request, 'dams/DB/mchoice.html')
 
 def mysqlsingle(request):
-    return render(request, 'dams/mysqlsingle.html')
+    return render(request, 'dams/DB/mysqlsingle.html')
 
 def singleinstall(request):
     ip = request.POST.get('hostip')
@@ -37,10 +37,10 @@ def singleinstall(request):
     info_dict = ip + " " + "ansible_connection=ssh" + " " + "ansible_user=root" + " " + "ansible_host="+ ip + " " + "ansible_ssh_pass=" + password
     with open(inventory_path, 'w') as f:
         f.write(info_dict)
-    return HttpResponse("ok")
+    return render(request, 'dams/DB/mysqlsingleinstall.html')
 
 def galeracluster(request):
-    return render(request, 'dams/galeracluster.html')
+    return render(request, 'dams/DB/galeracluster.html')
 
 def galerainstall(request):
     pass

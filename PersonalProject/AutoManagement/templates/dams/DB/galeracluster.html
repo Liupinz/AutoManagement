@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>MySQL | Configuration</title>
-    <link rel="stylesheet" type="text/css" href="/static/CSS/galeracluster.css">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/DB/galeracluster.css">
+    <script type="text/javascript" src="/static/js/DB/galeracluster.js"></script>
 </head>
 <body class="mdashboard">
     <div class="mcontainer">
@@ -19,16 +20,19 @@
                 <form action="/singlemysql" method="post">
                     {% csrf_token %}
                     <div class="mform-row">
-                        <label class="required" for="id_hostip">节点1地址</label>
-                        <input type="text" name="hostip1" id="id_hostip">
+                        <label class="required" for="id_hostip1">节点1地址</label>
+                        <input type="text" name="hostip1" id="id_hostip1">
+                        <span class="validation-error" id="validation1"></span>
                     </div>
                     <div class="mform-row">
-                        <label class="required" for="id_hostip">节点2地址</label>
-                        <input type="text" name="hostip2" id="id_hostip">
+                        <label class="required" for="id_hostip2">节点2地址</label>
+                        <input type="text" name="hostip2" id="id_hostip2">
+                        <span class="validation-error" id="validation2"></span>
                     </div>
                     <div class="mform-row">
-                        <label class="required" for="id_hostip">节点3地址</label>
-                        <input type="text" name="hostip3" id="id_hostip">
+                        <label class="required" for="id_hostip3">节点3地址</label>
+                        <input type="text" name="hostip3" id="id_hostip3">
+                        <span class="validation-error" id="validation3"></span>
                     </div>
                     <div class="mform-row">
                         <label class="required" for="id_mpassword">用户密码</label>

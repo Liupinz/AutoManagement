@@ -54,7 +54,13 @@
     margin: 20px auto 0;
 }
 
-.mform-row #id_hostip, .mform-row #id_mpassword{
+.validation-error{
+    color: #eb5f5c;
+    font-size: 12px;
+    /*display: block;*/
+}
+
+.mform-row #id_hostip1, .mform-row #id_hostip2, .mform-row #id_hostip3, .mform-row #id_mpassword{
     /*width: 100%;*/
     border-radius: 4px;
     padding: 8px;
@@ -63,7 +69,7 @@
 
 .msubmit{
     float: right;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
 .msubmit input{

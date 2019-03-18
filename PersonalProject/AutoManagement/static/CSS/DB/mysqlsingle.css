@@ -64,12 +64,12 @@
 .validation-error{
     color: #eb5f5c;
     font-size: 12px;
-    display: block;
+    /*display: block;*/
 }
 
 .msubmit{
     float: right;
-    margin-top: 180px;
+    margin-top: 170px;
 }
 
 .msubmit input{

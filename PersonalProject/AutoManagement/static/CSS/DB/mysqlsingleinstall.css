@@ -1,0 +1,64 @@
+.mdashboard{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.mheader{
+    width: auto;
+    height: 40px;
+    padding: 10px 40px;
+    background: #417690;
+    line-height: 40px;
+    color: cornsilk;
+
+}
+
+.mheader h1{
+    font-size: 25px;
+    color: #f8f8f8;
+    margin: 0;
+    font-weight: normal; /*不加粗*/
+    text-align: center; /*水平居中*/
+    line-height: 40px;  /*垂直居中*/
+    float: left;
+}
+
+.h {
+    color: #cccccc;
+    font-size: 13px;
+    font-family: 'Microsoft Yahei';
+    border-bottom: 1px solid #eee
+}
+
+.mcontent{
+    width: 415px;
+    height: 530px;
+    border: 1px solid #eaeaea;
+    margin: 100px auto 0;
+    position: relative;
+    background: #417690;
+}
+
+.div1{
+    margin: 85px auto 0;
+    font-size: 30px;
+    /*border: 1px solid;*/
+    width: 327px;
+    color: #f8f8f8;
+
+}
+
+.div2{
+    position: absolute;
+    left: 160px;
+    bottom: 85px;
+    border-radius: 4px;
+    /*border: 1px solid #ccc;*/
+}
+
+.div2 a{
+    text-decoration: none; /*去掉a标签下划线*/
+    font-size: 25px;
+    color: #f8f8f8;
+}

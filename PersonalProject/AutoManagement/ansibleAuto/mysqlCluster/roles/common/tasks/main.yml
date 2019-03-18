@@ -1,0 +1,7 @@
+---
+
+- name: host configure
+  include: hosts-config.yml
+
+- name: basic configure
+  include: basic_config.yml
